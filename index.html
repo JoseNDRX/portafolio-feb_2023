@@ -15,8 +15,12 @@
 <body>
   <header class="header">
     <nav class="navbar__container">
-      <a class="navbar__logo" href="#"><i class='bx bx-analyse'></i> Mi porta<span>folio</span></a>
-      <div id="nav" class="navbar__menu">
+      
+      <div class="navbar__container__logo">
+        <a class="navbar__logo" href="#"><i class='bx bx-analyse'></i> Mi porta<span>folio</span></a>
+      </div>
+      
+      <div id="nav" class="navbar__container__menu">
         <a href="#close"><i class="bx bx-x btn__exit navbar__icon"></i></a>
         <ul class="navbar__list">
           <li class="navbar__list--item">
@@ -32,8 +36,12 @@
             <a href="#contact" class="navbar__list--link">Contacto</a>
           </li>
         </ul>
-      </div> 
-      <a href="#nav"><i class="bx bx-menu btn__menu navbar__icon"></i></a>     
+      </div>
+
+      <div class="header__close">
+        <a href="#nav"><i class="bx bx-menu btn__menu navbar__icon"></i></a> 
+      </div>
+          
     </nav>
   </header>
   <hr>
@@ -46,11 +54,10 @@
         <div class="home__profile--circle"></div>
         <div class="home__profile--img"><img src="img/ndrx.jpeg" alt=""></div>
         <div class="home__profile--name">JOSE ANDRES <span>RAMIREZ</span></div>
-        <div class="home__profile--description">Desarrollador WEB</div>
+        <div class="home__profile--description">Desarrollador FULL STACK</div>
         <div class="home__profile--social">
-          <a href="#"><i class='bx bxl-facebook'></i></i></a>
-          <a href="#"><i class='bx bxl-github'></i></i></a>
-          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/JoseNDRX" target="_blank"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/jos%C3%A9-andr%C3%A9s-ram%C3%ADrez-olvera-ba7822268" target="_blank"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
     </section>
@@ -58,13 +65,13 @@
 
     <section id="about" class="about">
       <h2 class="about__title">Acerca <span>de</span> mi</h2>
-      <p class="about__description">Apartir de enero de 2023 me adentro por completo en el desarrollo web. Este es mi sitio donde publico lo que estoy programando. Puedes seguir mis trabajos en mis redes sociales y contactame.</p>
+      <p class="about__description">Soy un desarrollador Full Stack con experiencia desde enero de 2022 inmerso por completo en el desarrollo web. Este es mi sitio donde publico lo que estoy programando. Puedes seguir mis trabajos en mis redes sociales y contactame.</p>
       <h3>Conomientos <span>|</span> Herramientas</h3>
       <div class="about__tools">
         <div class="about__tools--knowledge">
           <div>
             <img src="img/html-icon.png" alt="">
-            <h4>TML5</h4>
+            <h4>HTML5</h4>
           </div>
           <div>
             <img src="img/css-icon.png" alt="">
@@ -75,8 +82,20 @@
             <h4>Java Script</h4>
           </div>
           <div>
-            <img src="img/wordpress-icon.png" alt="">
-            <h4>Word Press</h4>
+            <img class="react-logo" src="img/react.svg" alt="">
+            <h4>React</h4>
+          </div>
+          <div>
+            <img src="img/redux.svg" alt="">
+            <h4>Redux</h4>
+          </div>
+          <div>
+            <img src="img/Bootstrap_logo.svg" alt="">
+            <h4>Bootstrap</h4>
+          </div>
+          <div>
+            <img src="img/node.png" alt="">
+            <h4>Node</h4>
           </div>
         </div>
         <div class="about__tools--tools">
@@ -91,6 +110,14 @@
           <div>
             <img src="img/git-icon.png" alt="">
             <h4>Git</h4>
+          </div>
+          <div>
+            <img src="img/wordpress-icon.png" alt="">
+            <h4>Word Press</h4>
+          </div>
+          <div>
+            <img src="img/postgresql.png" alt="">
+            <h4>PostgreSQL</h4>
           </div>
         </div>
       </div>
@@ -109,12 +136,30 @@
     <hr>
 
     <section id="projects" class="projects">
-      <h2 class="projects__title"><span>Pro</span>yectos</h2>
+      <h2 class="projects__title"><span>Proyectos</span> Recientes</h2>
       <div class="projects__grid">
-        <div><img src="img/project1.jpg" alt=""></div>
-        <div><img src="img/project2.png" alt=""></div>
-        <div><img src="img/project3.jpg" alt=""></div>
-        <div><img src="img/project4.png" alt=""></div>
+        <div>
+          <a href="https://teal-alpaca-f1ca29.netlify.app/" target="_blank">
+            <img src="img/r_and_m.png" alt="CRUD Rick & Morthy">
+            <h4>Bucardor Rick and Morthy</h4>
+            <h5>HTML + CSS + JS + REACT</h5>
+          </a>
+        </div>
+        <div>
+          <a href="https://vermillion-pony-46f35c.netlify.app/" target="_blank">
+            <img src="img/CRUD-Products.png" alt="CRUD-Products">
+            <h4>CRUD-Products</h4>
+            <h5>HTML + CSS + JS + REACT</h5>
+          </a>
+        </div>
+        <div>
+          <a href="https://zesty-crepe-ed7ecc.netlify.app/#/" target="_blank">
+            <img src="img/CRUD-Ecommerce.png" alt="CRUD-Products">
+            <h4>CRUD-Ecommerce </h4>
+            <h5>HTML + CSS + JS + REACT + REDUX + BOOTSTRAP</h5>
+            <h5>user: jandresrmz@yahoo.com --- pass:12345</h5>
+          </a>
+        </div>
       </div>
     </section>
     <hr>
@@ -168,11 +213,11 @@
                 rows="10"
                 class="contact__form-input"
               ></textarea>
-            </div>  
-            <button type="submit" class="btn contact__form-button">
-              Enviar
-            </button>
-          </form>
+              </div>  
+              <button type="submit" class="btn contact__form-button">
+                Enviar
+              </button>
+            </form>
         </div>
       </div>
     </section>
@@ -187,8 +232,8 @@
     <p>Para estar al día de mis proyectos mira mis redes:</p>
     <div class="footer__social-grid">
       <a class="footer__social-link" href="#"><i class="bx bxl-facebook footer__icon"></i></a>
-      <a class="footer__social-link" href="#"><i class="bx bxl-github footer__icon"></i></a>
-      <a class="footer__social-link" href="#"><i class="bx bxl-linkedin footer__icon"></i></a>
+      <a class="footer__social-link" href="https://github.com/JoseNDRX" target="_blank"><i class="bx bxl-github footer__icon"></i></a>
+      <a class="footer__social-link" href="https://www.linkedin.com/in/jos%C3%A9-andr%C3%A9s-ram%C3%ADrez-olvera-ba7822268" target="_blank"><i class="bx bxl-linkedin footer__icon"></i></a>
     </div>
     <p class="footer__copy">&copy; 2023, Todos los derechos reservados</p>
 
