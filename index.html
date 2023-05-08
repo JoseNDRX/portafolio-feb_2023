@@ -195,24 +195,26 @@
         </div>
         <div class="contact__form">
           <h3 class="contact__form-title">Enviar mensaje</h3>
-            <form id="form" class="contact__form-container">
+            <form id="form" class="contact__form-container" action="enviar.php" method="post">
               <div class="contact__form-group">
                 <label for="name" class="contact__form-label">Nombre</label>
                 <input type="text" id="name" name="name" class="contact__form-input" />
-              </div>  
-            <div class="contact__form-group">
-              <label for="subject" class="contact__form-label">Asunto</label>
-              <input type="text" id="subject" name="subject" class="contact__form-input" />
-            </div>  
-            <div class="contact__form-group">
-              <label for="message" class="contact__form-label">Mensaje</label>
-              <textarea
-                id="message"
-                name="message"
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-              ></textarea>
+                <label for="email" class="contact__form-label">Correo</label>
+                <input type="text" id="email" name="email class="contact__form-input" />
+              </div>
+              <div class="contact__form-group">
+                <label for="subject" class="contact__form-label">Asunto</label>
+                <input type="text" id="subject" name="subject" class="contact__form-input" />
+              </div> 
+              <div class="contact__form-group">
+                <label for="message" class="contact__form-label">Mensaje</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  class="contact__form-input"
+                ></textarea>
               </div>  
               <button type="submit" class="btn contact__form-button">
                 Enviar
